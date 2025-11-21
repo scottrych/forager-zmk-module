@@ -79,7 +79,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPSWORD";
             #binding-cells = <0>;
-            continue-list = <A>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
         };
     };
 
@@ -97,7 +97,7 @@
 
         base {
             bindings = <
-&mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 L  &mt NUMBER_4 D  &mt N5 P  &kp J  &kp L  &kp U  &kp Y  &as LS(SEMI) SEMI  &mt CAPS A  &lhm LCTRL S  &lhm LALT R  &lhm LGUI T  &kp G  &kp M  &rhm LGUI N  &rhm LALT E  &rhm LCTRL I  &kp O  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH  &lt 1 TAB  &lt 2 RET  &lt 3 SPACE  &lt 3 SPACE
+&mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 L  &mt NUMBER_4 D  &mt N5 P  &kp J  &kp L  &kp U  &kp Y  &as LS(SEMI) SEMI  &kp A  &lhm LCTRL S  &lhm LALT R  &lhm LGUI T  &kp G  &kp M  &rhm LGUI N  &rhm LALT E  &rhm LCTRL I  &kp O  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH  &lt 1 TAB  &lt 2 RET  &lt 3 SPACE  &lt 3 SPACE
             >;
         };
 
