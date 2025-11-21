@@ -2,9 +2,9 @@
 include:
   - board: seeeduino_xiao_ble
     shield: forager_left
-    cmake-args: -DZMK_KEYMAP_FILE="config/forager.keymap"
+    cmake-args: -DZMK_KEYMAP_FILE=config/forager.keymap
   - board: seeeduino_xiao_ble
     shield: forager_right
-    cmake-args: -DZMK_KEYMAP_FILE="config/forager.keymap"
+    cmake-args: -DZMK_KEYMAP_FILE=config/forager.keymap
   - board: seeeduino_xiao_ble
     shield: settings_reset
