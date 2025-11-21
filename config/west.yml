@@ -12,6 +12,6 @@ manifest:
     - name: vial
       remote: zmk-modules
       revision: main
-      path: modules/vial
+      path: vial
   self:
     path: config
