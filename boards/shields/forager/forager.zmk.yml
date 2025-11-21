@@ -6,6 +6,7 @@ requires: [seeeduino_xiao_ble]
 features:
   - keys
   - studio
+  - vial
 siblings:
   - forager_left
   - forager_right
