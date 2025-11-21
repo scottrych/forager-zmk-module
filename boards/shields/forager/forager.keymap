@@ -8,9 +8,6 @@
 #define SYM  2
 #define ADJ  3
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
-#define MEH LS(LC(LALT))
-
 / {
     behaviors {
         as: auto_shift {
@@ -83,9 +80,9 @@
 
         base {
             bindings = <
-            &kp Q           &kp W           &kp F           &kp P           &kp B                                           &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
+            &kp Q           &kp W           &kp F           &kp P           &kp B                                           &kp J           &kp L           &kp U           &kp Y           &as LS(SEMI) SEMI
             &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp G                                           &kp M           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
-            &kp Z           &kp X           &kp C           &kp D           &kp V                                           &kp K           &kp H           AS(COMMA)       AS(DOT)         AS(FSLH)
+            &kp Z           &kp X           &kp C           &kp D           &kp V                                           &kp K           &kp H           &as LS(COMMA) COMMA &as LS(DOT) DOT &as LS(FSLH) FSLH
                                                                             &sym_bspc 2 0   &smart_shift    &smart_shift    &lt NAV SPACE
             >;
         };
@@ -101,8 +98,8 @@
 
         sym {
             bindings = <
-            AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-            AS(GRAVE)       &sk LCTRL       &sk LALT        &sk LGUI        &sk LC(LALT)                                    AS(BSLH)        AS(MINUS)       AS(EQUAL)       AS(LBKT)        AS(RBKT)
+            &as LS(N1) N1   &as LS(N2) N2   &as LS(N3) N3   &as LS(N4) N4   &as LS(N5) N5                                   &as LS(N6) N6   &as LS(N7) N7   &as LS(N8) N8   &as LS(N9) N9   &as LS(N0) N0
+            &as LS(GRAVE) GRAVE &sk LCTRL   &sk LALT        &sk LGUI        &sk LC(LALT)                                    &as LS(BSLH) BSLH &as LS(MINUS) MINUS &as LS(EQUAL) EQUAL &as LS(LBKT) LBKT &as LS(RBKT) RBKT
             &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &kp ENTER
                                                                             &trans          &trans          &kp LSHFT       &mo NAV
             >;
