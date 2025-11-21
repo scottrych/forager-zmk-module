@@ -115,10 +115,10 @@
 
         sym {
             bindings = <
-&as LS(N1) N1        &as LS(N2) N2  &as LS(N3) N3  &as LS(N4) N4  &as LS(N5) N5  &as LS(N6) N6      &as LS(N7) N7        &as LS(N8) N8        &as LS(N9) N9      &as LS(N0) N0
-&as LS(GRAVE) GRAVE  &sk LCTRL      &sk LALT       &sk LGUI       &sk LC(LALT)   &as LS(BSLH) BSLH  &as LS(MINUS) MINUS  &as LS(EQUAL) EQUAL  &as LS(LBKT) LBKT  &as LS(RBKT) RBKT
-&trans               &trans         &trans         &trans         &trans         &trans             &trans               &trans               &trans             &kp ENTER
-                                                   &trans         &trans         &kp LSHFT          &mo NAV
+&kp F1         &kp F2                &kp F3           &kp F4  &kp F5            &kp F6              &kp F7              &kp F8          &kp F9               &kp F10
+&kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &trans           &trans  &kp LC(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)
+&kp C_VOL_DN   &kp K_MUTE            &kp C_VOLUME_UP  &trans  &kp LC(DOWN)      &trans              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
+                                                      &trans  &trans            &trans              &trans
             >;
         };
 
