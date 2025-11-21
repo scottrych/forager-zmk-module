@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -266,10 +267,10 @@
 
         board {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL  &kp C_SLEEP  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP
-&studio_unlock  &trans        &trans        &trans        &trans          &trans       &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP
-&bootloader     &trans        &trans        &trans        &trans          &trans       &trans  &trans  &trans        &bootloader
-                                            &trans        &trans          &trans       &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+&out OUT_BLE  &out OUT_USB  &trans        &trans        &trans          &trans         &trans         &trans         &trans         &bt BT_CLR_ALL
+&bootloader   &trans        &trans        &trans        &trans          &sys_reset     &trans         &trans         &trans         &bootloader
+                                          &trans        &trans          &trans         &trans
             >;
 
             label = "Board";
