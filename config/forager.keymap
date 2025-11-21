@@ -106,10 +106,10 @@
 
         nav {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &kp PAGE_UP    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &kp DELETE
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans     &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp BSLH
-&trans  &trans     &trans    &trans    &trans     &trans         &kp HOME       &kp END   &kp LC(SPACE)  &kp LC(SPACE)
-                             &mo SYM   &kp LSHFT  &trans         &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5          &kp NUMBER_6           &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9  &kp N0
+&capsword     &trans        &trans          &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp MINUS      &trans        &trans
+&trans        &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans        &trans
+                                            &trans           &trans                &trans                 &kp LS(DELETE)
             >;
         };
 
