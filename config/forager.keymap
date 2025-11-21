@@ -253,13 +253,15 @@
             label = "TextExpander";
         };
 
-        layer_5 {
+        short {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&kp LG(LS(BACKSLASH))  &kp RG(BACKSLASH)  &trans  &kp LG(LS(NUMBER_4))  &trans                 &kp LG(LC(LA(K)))  &trans         &trans  &trans                &trans
+&trans                 &kp LG(LA(LS(S)))  &trans  &trans                &kp RG(RC(RA(RS(C))))  &trans             &trans         &trans  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&kp RG(RS(TAB))        &kp RG(TAB)        &trans  &kp RG(RS(C))         &kp RG(RA(V))          &trans             &kp RG(RC(C))  &trans  &trans                &kp RG(RA(RS(K)))
+                                                  &trans                &trans                 &trans             &trans
             >;
+
+            label = "Shortcuts";
         };
 
         board {
