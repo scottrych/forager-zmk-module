@@ -275,6 +275,17 @@
 
             label = "Board";
         };
+
+        ai {
+            bindings = <
+&kp LS(F7)  &kp RA(RC(RS(A)))  &kp RA(RC(RS(B)))  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans             &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans             &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &trans  &trans  &trans  &trans
+            >;
+
+            label = "AI";
+        };
     };
 };
 
