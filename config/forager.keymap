@@ -186,13 +186,6 @@
             bindings = <&kp COLON &kp L &kp S>;
             label = "LSAL";
         };
-
-        NEXTAPP: NEXTAPP {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp L &kp S>;
-            label = "NEXTAPP";
-        };
     };
 
     combos {
@@ -203,9 +196,14 @@
             key-positions = <0 1>;
         };
 
-        Layer5 {
-            bindings = <&mo 4>;
+        AI {
+            bindings = <&mo 6>;
             key-positions = <32 33>;
+        };
+
+        Board {
+            bindings = <&mo 5>;
+            key-positions = <30 31>;
         };
     };
 
@@ -214,17 +212,17 @@
 
         base {
             bindings = <
-&mt NUMBER_1 Q             &mt NUMBER_2 W  &mt NUMBER_3 L  &mt NUMBER_4 D  &mt N5 P   &mt NUMBER_6 K  &mt N7 M            &mt N8 U          &mt N9 Y             &mt N0 SEMI
-&kp A                      &lhm LCTRL S    &lhm LALT R     &lhm LGUI T     &kp G      &kp F           &rhm RIGHT_SHIFT N  &rhm RIGHT_GUI E  &rhm RIGHT_ALT I     &rhm RIGHT_CONTROL O
-&longpress PIPE BACKSLASH  &mt LG(Z) Z     &mt LG(X) X     &mt RG(C) C     &kp V      &kp J           &kp B               &kp LS(H)         &as LS(COMMA) COMMA  &as SLASH PERIOD
-                                                           &lt 1 TAB       &lt 2 RET  &lt 5 SPACE     &lt 3 BACKSPACE
+&mt NUMBER_1 Q             &mt NUMBER_2 W   &mt NUMBER_3 L   &mt NUMBER_4 D     &mt N5 P   &mt NUMBER_6 K  &mt N7 M            &mt N8 U          &mt N9 Y                     &mt N0 SEMI
+&mt LEFT_CONTROL A         &lhm LEFT_ALT S  &lhm LEFT_GUI R  &lhm LEFT_SHIFT T  &kp G      &kp F           &rhm RIGHT_SHIFT N  &rhm RIGHT_GUI E  &rhm RIGHT_ALT I             &rhm RIGHT_CONTROL O
+&longpress PIPE BACKSLASH  &mt LG(Z) Z      &mt LG(X) X      &mt RG(C) C        &kp V      &kp J           &kp B               &kp H             &longpress UNDERSCORE COMMA  &longpress KP_SLASH PERIOD
+                                                             &lt 1 TAB          &lt 2 RET  &lt 5 SPACE     &lt 3 BACKSPACE
             >;
         };
 
         symnum {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5          &kp NUMBER_6           &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9  &kp N0
-&kp GRAVE     &trans        &trans          &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp MINUS      &kp KP_EQUAL  &trans
+&kp GRAVE     &trans        &trans          &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp MINUS      &kp KP_EQUAL  &longpress DOUBLE_QUOTES SINGLE_QUOTE
 &caps_word    &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans        &longpress QUESTION SLASH
                                             &kp GLOBE        &trans                &trans                 &kp LS(DELETE)
             >;
@@ -269,7 +267,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
 &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans          &trans         &trans         &trans         &trans         &bt BT_CLR_ALL
-&bootloader   &trans        &trans        &trans        &trans          &sys_reset     &trans         &trans         &trans         &bootloader
+&bootloader   &trans        &trans        &trans        &sys_reset      &sys_reset     &trans         &trans         &trans         &bootloader
                                           &trans        &trans          &trans         &trans
             >;
 
