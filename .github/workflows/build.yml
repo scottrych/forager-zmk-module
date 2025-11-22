@@ -112,11 +112,23 @@ jobs:
         working-directory: ${{ env.base_dir }}
         run: west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
 
-            - name: West Update                                                                                                               
-              working-directory: ${{ env.base_dir }}                                                                                          
-              run: west update --fetch-opt=--filter=tree:0                                                                                    
-              env:                                                                                                                            
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      - name: West Zephyr export
+                  - name: Set up git credentials for submodules
+
+                    run: git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+
+                    env:
+
+                      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Ensure it's available for this step
+
+                  - name: West Update                                                                                                               
+
+                    working-directory: ${{ env.base_dir }}                                                                                          
+
+                    run: west update --fetch-opt=--filter=tree:0                                                                                    
+
+                    env:                                                                                                                            
+
+                      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      - name: West Zephyr export
         working-directory: ${{ env.base_dir }}
         run: west zephyr-export
 
